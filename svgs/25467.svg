@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g id="NE">
+	<g id="change1_1"><path fill="#FFFFFF" d="M480,0h-11v33h31V20C500,9,491,0,480,0z"></path></g>
+</g>
+<g id="E">
+	<g id="change1_2"><rect x="469" y="33" fill="#FFFFFF" width="31" height="438"></rect></g>
+</g>
+<g id="C">
+	<g id="change1_3"><rect x="21" y="13" fill="#FFFFFF" width="468" height="478"></rect></g>
+</g>
+<g id="N">
+	<g id="change1_4"><rect x="31" fill="#FFFFFF" width="438" height="33"></rect></g>
+</g>
+<g id="NW">
+	<g id="change1_5"><path fill="#FFFFFF" d="M20,0C9,0,0,9,0,20v13h31V0H20z"></path></g>
+</g>
+<g id="W">
+	<g id="change1_6"><rect y="33" fill="#FFFFFF" width="31" height="438"></rect></g>
+</g>
+<g id="S">
+	<g id="change1_7"><rect x="31" y="471" fill="#FFFFFF" width="438" height="29"></rect></g>
+</g>
+<g id="SW">
+	<g id="change1_8"><path fill="#FFFFFF" d="M0,471v9c0,11,9,20,20,20h11v-29H0z"></path></g>
+</g>
+<g id="SE">
+	<g id="change1_9"><path fill="#FFFFFF" d="M480,500c11,0,20-9,20-20v-9h-31v29H480z"></path></g>
+</g>
+</svg>

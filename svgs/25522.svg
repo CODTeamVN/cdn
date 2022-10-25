@@ -1,0 +1,86 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="523.307px" height="523.307px" viewBox="0 0 523.307 523.307" style="enable-background:new 0 0 523.307 523.307;" xml:space="preserve">
+<g id="C">
+	<g id="change1_8_">
+		<rect x="40.709" y="40.709" style="fill:#F4BC33;" width="441.889" height="441.889"/>
+	</g>
+</g>
+<g id="S_1_">
+	<g id="change1_9_">
+		<rect x="40.709" y="509.101" style="fill:#F4BC33;" width="441.889" height="14.206"/>
+		<rect x="40.709" y="482.598" style="fill:#F4BC33;" width="441.889" height="24.059"/>
+	</g>
+	<g id="change2_8_">
+		<rect x="40.709" y="506.653" style="fill:#FFFFFF;" width="441.889" height="2.444"/>
+	</g>
+</g>
+<g id="W">
+	<g id="change1_1_">
+		<rect y="40.709" style="fill:#F4BC33;" width="14.207" height="441.889"/>
+		<rect x="16.655" y="40.709" style="fill:#F4BC33;" width="24.056" height="441.889"/>
+	</g>
+	<g id="change2_1_">
+		<rect x="14.207" y="40.709" style="fill:#FFFFFF;" width="2.446" height="441.889"/>
+	</g>
+</g>
+<g id="SW">
+	<g id="change1_2_">
+		<path style="fill:#F4BC33;" d="M29.421,509.101v-1.224c0-7.714-6.276-13.99-13.991-13.99h-1.224v-11.289H0v24.542    c8.93,0,16.168,7.239,16.168,16.167h24.541v-14.206H29.421z"/>
+		<path style="fill:#F4BC33;" d="M16.655,482.598v8.89c8.093,0.598,14.571,7.075,15.171,15.169h8.885v-24.059H16.655z"/>
+		<circle style="fill:#F4BC33;" cx="4.659" cy="518.014" r="3.661"/>
+	</g>
+	<g id="change2_2_">
+		<path style="fill:#FFFFFF;" d="M31.824,506.653c-0.6-8.091-7.079-14.571-15.171-15.169v-8.89h-2.446v11.289h1.224    c7.714,0,13.991,6.276,13.991,13.99v1.224H40.71v-2.444H31.824L31.824,506.653z"/>
+	</g>
+</g>
+<g id="E">
+	<g id="change1_3_">
+		<rect x="509.101" y="40.709" style="fill:#F4BC33;" width="14.206" height="441.889"/>
+		<rect x="482.598" y="40.709" style="fill:#F4BC33;" width="24.057" height="441.889"/>
+	</g>
+	<g id="change2_3_">
+		<rect x="506.653" y="40.709" style="fill:#FFFFFF;" width="2.446" height="441.889"/>
+	</g>
+</g>
+<g id="SE">
+	<g id="change1_4_">
+		<path style="fill:#F4BC33;" d="M509.101,493.887h-1.224c-7.716,0-13.989,6.276-13.989,13.99v1.224h-11.29v14.206h24.543    c0-8.928,7.238-16.167,16.166-16.167v-24.542h-14.206V493.887z"/>
+		<path style="fill:#F4BC33;" d="M482.598,506.653h8.889c0.6-8.091,7.076-14.571,15.168-15.169v-8.89h-24.057V506.653z"/>
+		<circle style="fill:#F4BC33;" cx="517.923" cy="518.014" r="3.661"/>
+	</g>
+	<g id="change2_4_">
+		<path style="fill:#FFFFFF;" d="M506.653,491.484c-8.091,0.598-14.57,7.078-15.168,15.169h-8.889v2.444h11.29v-1.224    c0-7.714,6.273-13.99,13.989-13.99h1.224v-11.289h-2.446V491.484L506.653,491.484z"/>
+	</g>
+</g>
+<g id="N">
+	<g id="change1_5_">
+		<rect x="40.709" style="fill:#F4BC33;" width="441.889" height="14.206"/>
+		<rect x="40.709" y="16.654" style="fill:#F4BC33;" width="441.889" height="24.055"/>
+	</g>
+	<g id="change2_5_">
+		<rect x="40.709" y="14.206" style="fill:#FFFFFF;" width="441.889" height="2.448"/>
+	</g>
+</g>
+<g id="NW">
+	<g id="change1_6_">
+		<path style="fill:#F4BC33;" d="M14.207,29.42h1.224c7.714,0,13.991-6.276,13.991-13.991v-1.224H40.71V0H16.168    C16.168,8.929,8.93,16.168,0,16.168v24.541h14.207V29.42z"/>
+		<path style="fill:#F4BC33;" d="M16.655,31.823v8.886H40.71V16.654h-8.885C31.226,24.745,24.746,31.225,16.655,31.823z"/>
+		<circle style="fill:#F4BC33;" cx="4.659" cy="5.407" r="3.661"/>
+	</g>
+	<g id="change2_6_">
+		<path style="fill:#FFFFFF;" d="M16.655,31.823c8.093-0.598,14.571-7.079,15.171-15.169h8.885v-2.448h-11.29v1.224    c0,7.714-6.276,13.991-13.991,13.991h-1.224V40.71h2.446L16.655,31.823L16.655,31.823z"/>
+	</g>
+</g>
+<g id="NE">
+	<g id="change1_7_">
+		<path style="fill:#F4BC33;" d="M507.141,0h-24.543v14.206h11.29v1.224c0,7.714,6.273,13.991,13.989,13.991h1.224V40.71h14.206    V16.168C514.379,16.168,507.141,8.929,507.141,0z"/>
+		<path style="fill:#F4BC33;" d="M506.653,40.709v-8.886c-8.091-0.598-14.57-7.079-15.168-15.169h-8.889v24.055H506.653z"/>
+		<circle style="fill:#F4BC33;" cx="517.923" cy="5.407" r="3.661"/>
+	</g>
+	<g id="change2_7_">
+		<path style="fill:#FFFFFF;" d="M491.485,16.654c0.598,8.091,7.076,14.571,15.168,15.169v8.886h2.446V29.42h-1.226    c-7.714,0-13.987-6.276-13.987-13.991v-1.224h-11.29v2.448L491.485,16.654L491.485,16.654z"/>
+	</g>
+</g>
+</svg>

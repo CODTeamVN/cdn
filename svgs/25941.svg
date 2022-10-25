@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 499 499" enable-background="new 0 0 499 499" xml:space="preserve">
+<g id="E">
+	<g id="change1_1"><rect x="484" y="60" fill="#FFFFFF" width="15" height="379"></rect></g>
+	<g id="change1_2"><rect x="448" y="60" fill="#FFFFFF" width="15" height="379"></rect></g>
+</g>
+<g id="W">
+	<g id="change1_3"><rect y="60" fill="#FFFFFF" width="15" height="379"></rect></g>
+	<g id="change1_4"><rect x="36" y="60" fill="#FFFFFF" width="15" height="379"></rect></g>
+</g>
+<g id="N">
+	<g id="change1_5"><rect x="60" fill="#FFFFFF" width="379" height="15"></rect></g>
+	<g id="change1_6"><rect x="60" y="36" fill="#FFFFFF" width="379" height="15"></rect></g>
+</g>
+<g id="S">
+	<g id="change1_7"><rect x="60" y="484" fill="#FFFFFF" width="379" height="15"></rect></g>
+	<g id="change1_8"><rect x="60" y="448" fill="#FFFFFF" width="379" height="15"></rect></g>
+</g>
+<g id="NE">
+	<g id="change1_9"><polygon fill="#FFFFFF" points="438,0 438,15 484,15 484,61 499,61 499,0 	"></polygon></g>
+	<g id="change1_10"><polygon fill="#FFFFFF" points="438,36 438,51 448,51 448,61 463,61 463,36 	"></polygon></g>
+</g>
+<g id="NW">
+	<g id="change1_11"><polygon fill="#FFFFFF" points="51,51 61,51 61,36 36,36 36,61 51,61 	"></polygon></g>
+	<g id="change1_12"><polygon fill="#FFFFFF" points="15,15 61,15 61,0 0,0 0,61 15,61 	"></polygon></g>
+</g>
+<g id="SE">
+	<g id="change1_13"><polygon fill="#FFFFFF" points="499,438 484,438 484,484 438,484 438,499 499,499 	"></polygon></g>
+	<g id="change1_14"><polygon fill="#FFFFFF" points="463,438 448,438 448,448 438,448 438,463 463,463 	"></polygon></g>
+</g>
+<g id="SW">
+	<g id="change1_15"><polygon fill="#FFFFFF" points="15,484 15,438 0,438 0,499 61,499 61,484 	"></polygon></g>
+	<g id="change1_16"><polygon fill="#FFFFFF" points="61,463 61,448 51,448 51,438 36,438 36,463 	"></polygon></g>
+</g>
+</svg>

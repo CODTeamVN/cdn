@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490.8 499" enable-background="new 0 0 490.8 499" xml:space="preserve">
+<g id="SW">
+	<g id="change1_1"><polygon fill="#FFFFFF" points="9.1,489.9 9.1,329.1 0,329.1 0,499 165.8,499 165.8,489.9 	"></polygon></g>
+	<g id="change1_2"><polygon fill="#FFFFFF" points="27.1,471.6 27.1,329.1 23,329.1 23,475.6 165.8,475.6 165.8,471.6 	"></polygon></g>
+</g>
+<g id="NE">
+	<g id="change1_3"><polygon fill="#FFFFFF" points="481.7,9.1 481.7,169.9 490.8,169.9 490.8,0 325,0 325,9.1 	"></polygon></g>
+	<g id="change1_4"><polygon fill="#FFFFFF" points="463.8,27.4 463.8,169.9 467.8,169.9 467.8,23.4 325,23.4 325,27.4 	"></polygon></g>
+</g>
+<g id="NW">
+	<g id="change1_5"><polygon fill="#FFFFFF" points="9.1,9.1 165.8,9.1 165.8,0 0,0 0,169.9 9.1,169.9 	"></polygon></g>
+	<g id="change1_6"><polygon fill="#FFFFFF" points="27.1,27.4 165.8,27.4 165.8,23.4 23,23.4 23,169.9 27.1,169.9 	"></polygon></g>
+</g>
+<g id="SE">
+	<g id="change1_7"><polygon fill="#FFFFFF" points="481.7,489.9 325,489.9 325,499 490.8,499 490.8,329.1 481.7,329.1 	"></polygon></g>
+	<g id="change1_8"><polygon fill="#FFFFFF" points="463.8,471.6 325,471.6 325,475.6 467.8,475.6 467.8,329.1 463.8,329.1 	"></polygon></g>
+</g>
+<g id="N">
+	<g id="change1_9"><rect x="165.8" fill="#FFFFFF" width="159.3" height="9.1"></rect></g>
+	<g id="change1_10"><rect x="165.8" y="23.4" fill="#FFFFFF" width="159.3" height="4"></rect></g>
+</g>
+<g id="S">
+	<g id="change1_11"><rect x="165.8" y="489.9" fill="#FFFFFF" width="159.3" height="9.1"></rect></g>
+	<g id="change1_12"><rect x="165.8" y="471.6" fill="#FFFFFF" width="159.3" height="4"></rect></g>
+</g>
+<g id="W">
+	<g id="change1_13"><rect y="169.9" fill="#FFFFFF" width="9.1" height="159.3"></rect></g>
+	<g id="change1_14"><rect x="23" y="169.9" fill="#FFFFFF" width="4.1" height="159.3"></rect></g>
+</g>
+<g id="E">
+	<g id="change1_15"><rect x="481.7" y="169.9" fill="#FFFFFF" width="9.1" height="159.3"></rect></g>
+	<g id="change1_16"><rect x="463.8" y="169.9" fill="#FFFFFF" width="4" height="159.3"></rect></g>
+</g>
+</svg>

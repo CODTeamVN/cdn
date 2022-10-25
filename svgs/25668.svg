@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g id="NW">
+	<g id="change1_1"><path fill="#FFFFFF" d="M14,66.9C14,38,38,14,66.9,14H72V-1h-5.1C29.7-1-1,29.7-1,66.9V72h15V66.9z"></path></g>
+</g>
+<g id="NE">
+	<g>
+		<g id="change1_2"><path fill="#FFFFFF" d="M433.1-1H428v15h5.1C462,14,486,38,486,66.9V72h15v-5.1C501,29.7,470.3-1,433.1-1z"></path></g>
+	</g>
+</g>
+<g id="N">
+	<g id="change1_3"><rect x="70" y="-1" fill="#FFFFFF" width="360" height="15"></rect></g>
+</g>
+<g id="W">
+	<g id="change1_4"><rect x="-1" y="70" fill="#FFFFFF" width="15" height="360"></rect></g>
+</g>
+<g id="S">
+	<g id="change1_5"><rect x="70" y="486" fill="#FFFFFF" width="360" height="15"></rect></g>
+</g>
+<g id="SW">
+	<g id="change1_6"><path fill="#FFFFFF" d="M66.9,486C38,486,14,462,14,433.1V428H-1v5.1c0,37.2,30.7,67.9,67.9,67.9H72v-15H66.9z"></path></g>
+</g>
+<g id="E">
+	<g id="change1_7"><rect x="486" y="70" fill="#FFFFFF" width="15" height="360"></rect></g>
+</g>
+<g id="SE">
+	<g id="change1_8"><path fill="#FFFFFF" d="M501,433.1V428h-15v5.1c0,28.9-24,52.9-52.9,52.9H428v15h5.1C470.3,501,501,470.3,501,433.1z"></path></g>
+</g>
+</svg>

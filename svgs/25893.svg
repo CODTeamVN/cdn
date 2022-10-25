@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Rounded_Square" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g id="rounded-square-layer-x">
+	<g id="change1">
+		<g id="nw">
+			<path fill="#FF244D" d="M60,0h107v169.2H0V60C0,26.9,26.9,0,60,0z"/>
+		</g>
+		<g id="n">
+			<rect x="162.6" fill="#FF244D" width="173.7" height="169.2"/>
+		</g>
+		<g id="ne">
+			<path fill="#FF244D" d="M334.1,0H440c33.1,0,60,26.9,60,60v109.2H334.1V0z"/>
+		</g>
+		<g id="w">
+			<rect y="167" fill="#FF244D" width="167" height="169.2"/>
+		</g>
+		<g id="c">
+			<rect x="164.8" y="167" fill="#FF244D" width="171.5" height="169.2"/>
+		</g>
+		<g id="e">
+			<rect x="334.1" y="167" fill="#FF244D" width="165.9" height="169.2"/>
+		</g>
+		<g id="sw">
+			<path fill="#FF244D" d="M0,334.1h167V500H60c-33.1,0-60-26.9-60-60V334.1z"/>
+		</g>
+		<g id="s">
+			<rect x="165.9" y="334.1" fill="#FF244D" width="170.4" height="165.9"/>
+		</g>
+		<g id="se">
+			<path fill="#FF244D" d="M334.1,334.1H500V440c0,33.1-26.9,60-60,60H334.1V334.1z"/>
+		</g>
+	</g>
+</g>
+</svg>

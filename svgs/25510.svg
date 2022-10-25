@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g id="Layer_X">
+	<g id="change1_1_">
+		<g id="NW_1_">
+			<polygon fill="#F9DA5D" points="168,23 168,0 0,0 0,168 23,168 23,23 			"/>
+			<rect x="52" y="52" fill="#F9DA5D" width="118" height="118"/>
+			<polygon fill="#F9DA5D" points="168,49 168,34 34,34 34,168 49,168 49,49 			"/>
+		</g>
+		<g id="NE_1_">
+			<polygon fill="#F9DA5D" points="332,0 332,23 477,23 477,168 500,168 500,0 			"/>
+			<rect x="331" y="52" fill="#F9DA5D" width="117" height="118"/>
+			<polygon fill="#F9DA5D" points="332,34 332,49 451,49 451,168 466,168 466,34 			"/>
+		</g>
+		<g id="N_1_">
+			<rect x="167" fill="#F9DA5D" width="166" height="23"/>
+			<rect x="167" y="52" fill="#F9DA5D" width="166" height="116"/>
+			<rect x="167" y="34" fill="#F9DA5D" width="166" height="15"/>
+		</g>
+		<g id="W_1_">
+			<rect y="167" fill="#F9DA5D" width="23" height="166"/>
+			<rect x="52" y="167" fill="#F9DA5D" width="119" height="168"/>
+			<rect x="34" y="167" fill="#F9DA5D" width="15" height="166"/>
+		</g>
+		<g id="E_1_">
+			<rect x="477" y="167" fill="#F9DA5D" width="23" height="166"/>
+			<rect x="329" y="167" fill="#F9DA5D" width="119" height="168"/>
+			<rect x="451" y="167" fill="#F9DA5D" width="15" height="166"/>
+		</g>
+		<g id="C_1_">
+			<rect x="168" y="167" fill="#F9DA5D" width="164" height="166"/>
+		</g>
+		<g id="S_1_">
+			<rect x="168" y="477" fill="#F9DA5D" width="164" height="23"/>
+			<rect x="168" y="451" fill="#F9DA5D" width="164" height="15"/>
+			<rect x="168" y="331" fill="#F9DA5D" width="164" height="117"/>
+		</g>
+		<g id="SW_1_">
+			<polygon fill="#F9DA5D" points="23,477 23,331 0,331 0,500 169,500 169,477 			"/>
+			<polygon fill="#F9DA5D" points="169,466 169,451 49,451 49,331 34,331 34,466 			"/>
+			<polygon fill="#F9DA5D" points="52,331 52,448 167,448 168,448 171,448 171,331 			"/>
+		</g>
+		<g id="SE_1_">
+			<polygon fill="#F9DA5D" points="477,477 331,477 331,500 500,500 500,331 477,331 			"/>
+			<polygon fill="#F9DA5D" points="466,331 451,331 451,451 331,451 331,466 466,466 			"/>
+			<polygon fill="#F9DA5D" points="329,331 329,448 332,448 333,448 448,448 448,331 			"/>
+		</g>
+	</g>
+</g>
+</svg>

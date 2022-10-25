@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g id="Layer_X">
+	<g id="change1_1_">
+		<g id="C_1_">
+			<rect x="178" y="178" fill="#CC96DE" width="144" height="144"/>
+		</g>
+		<g id="NW_1_">
+			<rect x="34" y="34" fill="#CC96DE" width="144" height="144"/>
+			<polygon fill="#CC96DE" points="23,23 178,23 178,0 0,0 0,178 23,178 			"/>
+		</g>
+		<g id="W_1_">
+			<rect x="34" y="178" fill="#CC96DE" width="144" height="144"/>
+			<rect y="178" fill="#CC96DE" width="23" height="144"/>
+		</g>
+		<g id="SW_1_">
+			<rect x="34" y="322" fill="#CC96DE" width="144" height="144"/>
+			<polygon fill="#CC96DE" points="23,477 23,322 0,322 0,500 178,500 178,477 			"/>
+		</g>
+		<g id="S_1_">
+			<rect x="178" y="322" fill="#CC96DE" width="144" height="144"/>
+			<rect x="178" y="477" fill="#CC96DE" width="144" height="23"/>
+		</g>
+		<g id="SE_1_">
+			<rect x="322" y="322" fill="#CC96DE" width="144" height="144"/>
+			<polygon fill="#CC96DE" points="477,477 322,477 322,500 500,500 500,322 477,322 			"/>
+		</g>
+		<g id="E_1_">
+			<rect x="322" y="178" fill="#CC96DE" width="144" height="144"/>
+			<rect x="477" y="178" fill="#CC96DE" width="23" height="144"/>
+		</g>
+		<g id="N_1_">
+			<rect x="178" y="34" fill="#CC96DE" width="144" height="144"/>
+			<rect x="178" fill="#CC96DE" width="144" height="23"/>
+		</g>
+		<g id="NE_1_">
+			<rect x="322" y="34" fill="#CC96DE" width="144" height="144"/>
+			<polygon fill="#CC96DE" points="322,0 322,23 477,23 477,178 500,178 500,0 			"/>
+		</g>
+	</g>
+</g>
+</svg>

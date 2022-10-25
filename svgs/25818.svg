@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g id="Layer_X">
+	<g id="change1_1_">
+		<g id="NW_1_">
+			<path fill="#3493CE" d="M40,0h127v169.2H0V40C0,17.9,17.9,0,40,0z"/>
+		</g>
+		<g id="N_1_">
+			<rect x="162.6" y="0" fill="#3493CE" width="173.7" height="169.2"/>
+		</g>
+		<g id="NE_1_">
+			<path fill="#3493CE" d="M334.1,0H460c22.1,0,40,17.9,40,40v129.2H334.1V0z"/>
+		</g>
+		<g id="W_1_">
+			<rect x="0" y="167" fill="#3493CE" width="167" height="169.2"/>
+		</g>
+		<g id="C_1_">
+			<rect x="164.8" y="167" fill="#3493CE" width="171.5" height="169.2"/>
+		</g>
+		<g id="E_1_">
+			<rect x="334.1" y="167" fill="#3493CE" width="165.9" height="169.2"/>
+		</g>
+		<g id="SW_1_">
+			<path fill="#3493CE" d="M0,334.1h167V500H40c-22.1,0-40-17.9-40-40V334.1z"/>
+		</g>
+		<g id="S_1_">
+			<rect x="165.9" y="334.1" fill="#3493CE" width="170.4" height="165.9"/>
+		</g>
+		<g id="SE_1_">
+			<path fill="#3493CE" d="M334.1,334.1H500V460c0,22.1-17.9,40-40,40H334.1V334.1z"/>
+		</g>
+	</g>
+</g>
+</svg>

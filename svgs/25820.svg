@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g id="C">
+	<g id="change2_8_">
+		<rect x="165" y="167" fill="#31AD75" width="170" height="166"/>
+	</g>
+</g>
+<g id="NW">
+	<g id="change2_7_">
+		<rect x="8" y="6" fill="#31AD75" width="159" height="161"/>
+	</g>
+	<g id="change1_7_">
+		<polygon fill="#FFFFFF" points="16,15 169,15 169,0 0,0 0,167 16,167 		"/>
+		<polygon fill="#FFFFFF" points="41,41 170,41 170,36 36,36 36,169 41,169 		"/>
+	</g>
+</g>
+<g id="N">
+	<g id="change2_6_">
+		<rect x="165" y="6" fill="#31AD75" width="170" height="163"/>
+	</g>
+	<g id="change1_6_">
+		<rect x="163" fill="#FFFFFF" width="173" height="15"/>
+		<rect x="165" y="36" fill="#FFFFFF" width="166" height="5"/>
+	</g>
+</g>
+<g id="NE">
+	<g id="change2_5_">
+		<rect x="333" y="7" fill="#31AD75" width="159" height="160"/>
+	</g>
+	<g id="change1_5_">
+		<polygon fill="#FFFFFF" points="332,15 484,15 484,167 500,167 500,0 332,0 		"/>
+		<polygon fill="#FFFFFF" points="330,36 330,41 459,41 459,167 464,167 464,36 		"/>
+	</g>
+</g>
+<g id="W">
+	<g id="change2_4_">
+		<rect x="9" y="165" fill="#31AD75" width="158" height="168"/>
+	</g>
+	<g id="change1_4_">
+		<rect y="163" fill="#FFFFFF" width="16" height="174"/>
+		<rect x="36" y="164" fill="#FFFFFF" width="5" height="171"/>
+	</g>
+</g>
+<g id="E">
+	<g id="change2_3_">
+		<rect x="333" y="165" fill="#31AD75" width="159" height="168"/>
+	</g>
+	<g id="change1_3_">
+		<rect x="484" y="163" fill="#FFFFFF" width="16" height="174"/>
+		<rect x="459" y="164" fill="#FFFFFF" width="5" height="171"/>
+	</g>
+</g>
+<g id="SW">
+	<g id="change2_2_">
+		<rect x="9" y="331" fill="#31AD75" width="158" height="159"/>
+	</g>
+	<g id="change1_2_">
+		<polygon fill="#FFFFFF" points="16,483 16,329 0,329 0,499 167,499 167,483 		"/>
+		<polygon fill="#FFFFFF" points="41,459 41,330 36,330 36,464 167,464 167,459 		"/>
+	</g>
+</g>
+<g id="SE">
+	<g id="change2_1_">
+		<rect x="333" y="331" fill="#31AD75" width="159" height="159"/>
+	</g>
+	<g id="change1_1_">
+		<polygon fill="#FFFFFF" points="500,329 484,329 484,483 333,483 333,499 500,499 		"/>
+		<polygon fill="#FFFFFF" points="464,330 459,330 459,459 333,459 333,464 464,464 		"/>
+	</g>
+</g>
+<g id="S">
+	<g id="change2">
+		<rect x="165" y="331" fill="#31AD75" width="170" height="162"/>
+	</g>
+	<g id="change1">
+		<rect x="163" y="483" fill="#FFFFFF" width="174" height="16"/>
+		<rect x="164" y="459" fill="#FFFFFF" width="172" height="5"/>
+	</g>
+</g>
+</svg>

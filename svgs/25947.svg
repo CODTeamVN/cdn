@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g id="C">
+	<g id="change1_1"><rect x="48" y="49" fill="#7D8693" width="403" height="402.1"></rect></g>
+</g>
+<g id="S">
+	<g id="change1_2"><rect x="68" y="431" fill="#7D8693" width="363" height="63"></rect></g>
+	<g id="change2_1"><rect x="68" y="485" fill="#FFFFFF" width="363" height="15"></rect></g>
+</g>
+<g id="W">
+	<g id="change1_3"><rect x="6" y="67" fill="#7D8693" width="62" height="366"></rect></g>
+	<g id="change2_2"><rect y="69" fill="#FFFFFF" width="15" height="362"></rect></g>
+</g>
+<g id="E">
+	<g id="change1_4"><rect x="431" y="69" fill="#7D8693" width="63" height="362"></rect></g>
+	<g id="change2_3"><rect x="485" y="69" fill="#FFFFFF" width="15" height="362"></rect></g>
+</g>
+<g id="SE">
+	<g id="change1_5"><path fill="#7D8693" d="M434.2,494c33.1,0,59.8-26.6,59.8-59.8V431h-63v63H434.2z"></path></g>
+	<g id="change2_4"><path fill="#FFFFFF" d="M432.7,485H429v15h3.7c37.2,0,67.3-30.1,67.3-67.3V429h-15v3.7C485,461.6,461.6,485,432.7,485z"></path></g>
+</g>
+<g id="SW">
+	<g id="change1_6"><path fill="#7D8693" d="M65.8,494H68v-63H6v3.2C6,467.4,32.6,494,65.8,494z"></path></g>
+	<g id="change2_5"><path fill="#FFFFFF" d="M0,437.5c2.5,35,31.7,62.5,67.3,62.5H70v-15h-2.7C38.4,485,15,461.6,15,432.7V429H0v3.7
+		C0,434.3-0.1,435.9,0,437.5z"></path></g>
+</g>
+<g id="N">
+	<g id="change1_7"><rect x="66" y="6" fill="#7D8693" width="367" height="63"></rect></g>
+	<g id="change2_6"><rect x="67" fill="#FFFFFF" width="365" height="15"></rect></g>
+</g>
+<g id="NE">
+	<g id="change1_8"><path fill="#7D8693" d="M434.2,6H431v63h63v-3.2C494,32.6,467.4,6,434.2,6z"></path></g>
+	<g id="change2_7"><path fill="#FFFFFF" d="M485,67.3V71h15v-3.7C500,30.1,469.9,0,432.7,0H429v15h3.7C461.6,15,485,38.4,485,67.3z"></path></g>
+</g>
+<g id="NW">
+	<g id="change1_9"><path fill="#7D8693" d="M6,65.8V69h62V6h-2.2C32.6,6,6,32.6,6,65.8z"></path></g>
+	<g id="change2_8"><path fill="#FFFFFF" d="M15,67.3C15,38.4,38.4,15,67.3,15H70V0h-2.7C31.7,0,2.5,27.5,0,62.5V71h15V67.3z"></path></g>
+</g>
+</svg>

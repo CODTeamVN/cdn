@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g id="C">
+	<g id="change1_1"><rect x="51.6" y="52.7" fill="#7D8693" width="395.6" height="393.6"></rect></g>
+</g>
+<g id="S">
+	<g id="change1_2"><rect x="59.9" y="439.6" fill="#7D8693" width="380.1" height="35"></rect></g>
+	<g id="change2_1"><rect x="60" y="471" fill="#FFFFFF" width="380" height="29"></rect></g>
+</g>
+<g id="SE">
+	<g id="change1_3"><rect x="439.5" y="438.5" fill="#7D8693" width="35" height="36"></rect></g>
+	<g id="change2_2"><polygon fill="#FFFFFF" points="500,439 471,439 471,471 438,471 438,500 500,500 	"></polygon></g>
+</g>
+<g id="W">
+	<g id="change1_4"><rect x="25.5" y="60" fill="#7D8693" width="34.6" height="380.6"></rect></g>
+	<g id="change2_3"><rect y="60" fill="#FFFFFF" width="29" height="379"></rect></g>
+</g>
+<g id="SW">
+	<g id="change1_5"><rect x="25.5" y="439.5" fill="#7D8693" width="35" height="35"></rect></g>
+	<g id="change2_4"><polygon fill="#FFFFFF" points="29,471 29,438 0,438 0,500 62,500 62,471 	"></polygon></g>
+</g>
+<g id="E">
+	<g id="change1_6"><rect x="440.4" y="59.9" fill="#7D8693" width="34.1" height="379.6"></rect></g>
+	<g id="change2_5"><rect x="471" y="60" fill="#FFFFFF" width="29" height="380"></rect></g>
+</g>
+<g id="NE">
+	<g id="change1_7"><rect x="438.8" y="25.5" fill="#7D8693" width="35.7" height="35.7"></rect></g>
+	<g id="change2_6"><polygon fill="#FFFFFF" points="439,0 439,29 471,29 471,62 500,62 500,0 	"></polygon></g>
+</g>
+<g id="N">
+	<g id="change1_8"><rect x="59.9" y="25.5" fill="#7D8693" width="379.9" height="34.6"></rect></g>
+	<g id="change2_7"><rect x="60" fill="#FFFFFF" width="380" height="29"></rect></g>
+</g>
+<g id="NW">
+	<g id="change1_9"><rect x="25.5" y="25.5" fill="#7D8693" width="34.5" height="35.5"></rect></g>
+	<g id="change2_8"><polygon fill="#FFFFFF" points="29,29 61,29 61,0 0,0 0,62 29,62 	"></polygon></g>
+</g>
+</svg>
