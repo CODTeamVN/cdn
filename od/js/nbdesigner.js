@@ -2,7 +2,7 @@ jQuery(document).ready(function () {
     if( navigator.vendor && navigator.vendor.indexOf('Apple') > -1 && navigator.userAgent.indexOf("Safari") != -1 && navigator.userAgent.indexOf("CriOS") == -1 ){
         jQuery('#nbd-chat-app').addClass('safari');
     }
-    if( ( jQuery('#triggerDesign').length > 0 || jQuery('#startDesign').length > 0 || jQuery('#startUpload').length > 0 ) && nbds_frontend.hide_cart_button == 'yes'){
+    if( ( jQuery('#triggerDesign').length > 0 || jQuery('#startDesign').length > 0 || jQuery('#startUpload').length > 0 ) && nbds_frontend.hide_cart_button){
         jQuery('button[type="submit"].single_add_to_cart_button').hide();
     };
     jQuery('#startUpload').on('click', function () {
@@ -123,7 +123,7 @@ jQuery(document).ready(function () {
     };
     hideUploadFrame = function(){
         if( jQuery('.upload-design-preview img').length > 0 ){
-            if( nbds_frontend.auto_add_cart == 'yes' && nbds_frontend.page_design_tool == 1 && nbds_frontend.edit_option_mode != 1 ){
+            if( nbds_frontend.auto_add_cart && nbds_frontend.page_design_tool == 1 && nbds_frontend.edit_option_mode != 1 ){
                 var product_id = jQuery('[name="nbd-add-to-cart"]').attr('value');
                 jQuery('.variations_form, form.cart').append('<input name="add-to-cart" type="hidden" value="' + product_id + '" />');
                 jQuery('.variations_form, form.cart').append('<input name="nbd-auto-add-to-cart-in-detail-page" type="hidden" value="1" />');
@@ -332,7 +332,7 @@ jQuery(document).ready(function () {
             html += '<div class="nbd-upload-items"><div class="nbd-upload-items-inner"><img src="'+file.src+'" class="shadow nbd-upload-item"/><p class="nbd-upload-item-title">'+file.name+'</p><span class="shadow" onclick="removeUploadFile('+index+')" >&times;</span></div></div>';
         });
         jQuery('.upload-design-preview').html(html);
-        if( nbds_frontend.hide_cart_button == 'yes' ) jQuery('button[type="submit"].single_add_to_cart_button').show();
+        if( nbds_frontend.hide_cart_button ) jQuery('button[type="submit"].single_add_to_cart_button').show();
     }
     NBDESIGNERPRODUCT.nbdesigner_ready();
     jQuery('form input[name="variation_id"]').on('change', function(){
@@ -411,7 +411,7 @@ jQuery(document).ready(function () {
             var scope = angular.element(document.getElementById("designer-controller")).scope();
             scope.saveData();
             return false;
-        }else if( nbds_frontend.ajax_cart == 'yes' && !_nbd_prevent_ajax ){
+        }else if( nbds_frontend.ajax_cart && !_nbd_prevent_ajax ){
             e.preventDefault();
             _nbd_form_submit(wrapper);
             return false;
@@ -494,7 +494,7 @@ jQuery(document).ready(function () {
                                 jQuery(key).replaceWith(value);
                                 jQuery(key).stop(true).css('opacity', '1').unblock();
                             });
-                            if( nbds_frontend.show_favicon_badge == 'yes' && nbds_frontend.is_mobile != 1 ){
+                            if( nbds_frontend.show_favicon_badge && nbds_frontend.is_mobile != 1 ){
                                 try{
                                     var nbd_favicon = nbd_favicon || new Favico({
                                         animation:'slide'
@@ -951,7 +951,7 @@ jQuery(document).ready(function () {
         });
     });
 
-    if( nbds_frontend.show_favicon_badge == 'yes' && nbds_frontend.is_mobile != 1 ){
+    if( nbds_frontend.show_favicon_badge && nbds_frontend.is_mobile != 1 ){
         var nbd_favicon = nbd_favicon || new Favico({
             animation:'slide'
         });
