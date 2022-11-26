@@ -1,5 +1,6 @@
 const odBaseUrl = "https://assets.codteam.net";
 const odApiUrl = "http://localhost:3000";
+const odClientToken = document.getElementById('od-integrate').getAttribute('attr-client-token');
 
 const style = document.createElement('style');
 
@@ -214,8 +215,6 @@ style.textContent = `
 
 document.head.appendChild(style);
 
-const odWrapper = document.getElementById('od-wrapper');
-const odStartDesignBtn = document.getElementById('od-start-design-btn');
 window.editorLoaded = false;
 window.nbOption = null;
 window.showEditor = function() {
@@ -260,9 +259,9 @@ if( document.getElementById('od-design-uuid') ){
 }
 
 
-odWrapper.insertAdjacentHTML("afterend", `<input id="od-design-uuid" type="text" value="${uuid}" />`);
+document.getElementById('od-wrapper').insertAdjacentHTML("afterend", `<input id="od-design-uuid" type="text" value="${uuid}" />`);
 const imgEls = [...Array(numberOfSide).keys()].map(key => `<img class="od-preview" src="${odBaseUrl}/${path}frame_${key}.png" />`);
-odStartDesignBtn.insertAdjacentHTML("afterend", `<div class="od-preview-wrap">${imgEls.join('')}</div>`);
+document.getElementById('od-start-design-btn').insertAdjacentHTML("afterend", `<div class="od-preview-wrap">${imgEls.join('')}</div>`);
 }
 
 window.addEventListener("message", (event) => {
@@ -279,50 +278,52 @@ if( typeof event.data == 'object') {
 }
 }, false);
 
+document.addEventListener("DOMContentLoaded", () => {
+const odWrapper = document.getElementById('od-wrapper');
 const cmsId = odWrapper.getAttribute('attr-pid');
-const odClientToken = document.getElementById('od-integrate').getAttribute('attr-client-token');
+const odStartDesignBtn = document.getElementById('od-start-design-btn');
 const odHtml = `
-<form action="http://localhost:3000/product?pid=${cmsId}" target="od-editor" method="post" id="editor-form">
-  <input type="hidden" name="X-API-KEY" value="${odClientToken}" />
-</form>
-<div class="editor-wrap">
-  <div class="nbd-load-page">
-	<div class="loader">
-	  <svg class="circular" viewBox="25 25 50 50">
-		<circle
-		  class="path"
-		  cx="50"
-		  cy="50"
-		  r="20"
-		  fill="none"
-		  stroke-width="2"
-		  stroke-miterlimit="10"
-		/>
-	  </svg>
+  <form action="http://localhost:3000/product?pid=${cmsId}" target="od-editor" method="post" id="editor-form">
+	<input type="hidden" name="X-API-KEY" value="${odClientToken}" />
+  </form>
+  <div class="editor-wrap">
+	<div class="nbd-load-page">
+	  <div class="loader">
+		<svg class="circular" viewBox="25 25 50 50">
+		  <circle
+			class="path"
+			cx="50"
+			cy="50"
+			r="20"
+			fill="none"
+			stroke-width="2"
+			stroke-miterlimit="10"
+		  />
+		</svg>
+	  </div>
 	</div>
+	<iframe
+	  name="od-editor"
+	  class="od-editor"
+	  id="od-editor"
+	  scrolling="no"
+	  frameborder="0"
+	  noresize="noresize"
+	  allowfullscreen
+	  mozallowfullscreen="true"
+	  webkitallowfullscreen="true"
+	  src="about:blank"
+	></iframe>
+	<div
+	  class="close-editor"
+	  onclick="onCloseEditor()"
+	>×</div>
   </div>
-  <iframe
-	name="od-editor"
-	class="od-editor"
-	id="od-editor"
-	scrolling="no"
-	frameborder="0"
-	noresize="noresize"
-	allowfullscreen
-	mozallowfullscreen="true"
-	webkitallowfullscreen="true"
-	src="about:blank"
-  ></iframe>
-  <div
-	class="close-editor"
-	onclick="onCloseEditor()"
-  >×</div>
-</div>
 `;
 odWrapper.insertAdjacentHTML("afterend", odHtml);
 odWrapper.removeAttribute('style');
+});
 
-/* Order */
 window.downloadOdDesign = function(uuid) {
 if( document.getElementById(`result-${uuid}`) ){
   document.getElementById(`result-${uuid}`).remove()
