@@ -279,6 +279,7 @@ window.addEventListener("message", (event) => {
 }, false);
 
 document.addEventListener("DOMContentLoaded", () => {
+  console.log(123);
   const odWrapper = document.getElementById('od-wrapper');
   const cmsId = odWrapper.getAttribute('attr-pid');
   const odStartDesignBtn = document.getElementById('od-start-design-btn');
@@ -316,7 +317,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ></iframe>
       <div
         class="close-editor"
-        onclick="onCloseEditor()"
+        onclick="window.onCloseEditor()"
       >×</div>
     </div>
   `;
