@@ -216,17 +216,17 @@ style.textContent = `
 document.head.appendChild(style);
 
 window.editorLoaded = false;
-window.nbOption = null;
+window.printOptions = null;
 window.showEditor = function() {
   document.querySelector('body').classList.toggle('od-prevent-scroll');
   document.querySelector('.editor-wrap').classList.toggle('is-visible');
   if(!window.editorLoaded){
     document.querySelector('#editor-form').submit();
   } else {
-    if( !!window.nbOption ){
+    if( !!window.printOptions ){
       document.getElementById('od-editor').contentWindow.postMessage({
         type: 'change_nbo_options',
-        nbOption: window.nbOption
+        printOptions: window.printOptions
       }, '*')
     }
   }
@@ -238,10 +238,10 @@ window.onCloseEditor = function() {
 window.onLoadedEditor = function() {
   window.editorLoaded = true;
   document.querySelector('.nbd-load-page').classList.toggle('is-invisible');
-  if( !!window.nbOption ){
+  if( !!window.printOptions ){
     document.getElementById('od-editor').contentWindow.postMessage({
       type: 'change_nbo_options',
-      nbOption: window.nbOption
+      printOptions: window.printOptions
     }, '*')
   }
 }
@@ -259,7 +259,7 @@ window.onSavedDesign = function(path, uuid, numberOfSide) {
   }
 
 
-  document.getElementById('od-wrapper').insertAdjacentHTML("afterend", `<input id="od-design-uuid" type="text" value="${uuid}" />`);
+  document.getElementById('od-wrapper').insertAdjacentHTML("afterend", `<input id="od-design-uuid" type="hidden" value="${uuid}" />`);
   const imgEls = [...Array(numberOfSide).keys()].map(key => `<img class="od-preview" src="${odBaseUrl}/${path}frame_${key}.png" />`);
   document.getElementById('od-start-design-btn').insertAdjacentHTML("afterend", `<div class="od-preview-wrap">${imgEls.join('')}</div>`);
 }
@@ -278,7 +278,41 @@ window.addEventListener("message", (event) => {
   }
 }, false);
 
+window.updatePrintOptions = function(type, values) {
+  if( ['dimension'].includes(type) ){
+    window.printOptions = window.printOptions || {
+      odOption: undefined
+    }
+    window.printOptions.odOption = window.printOptions.odOption || {}
+  }
+
+  switch(type){
+    case 'dimension':
+      window.printOptions.odOption.dimension = {
+        width: values.width,
+        height: values.height
+      }
+      break;
+    default:
+      break;
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  if( document.getElementById('it_width') && document.getElementById('it_height') ){
+    function updateDimension() {
+      window.updatePrintOptions('dimension', {
+        width: parseInt(document.getElementById('it_width').value),
+        height: parseInt(document.getElementById('it_height').value)
+      });
+    }
+
+    updateDimension();
+
+    document.getElementById('it_width').addEventListener('change', updateDimension);
+    document.getElementById('it_height').addEventListener('change', updateDimension);
+  }
+
   const odWrapper = document.getElementById('od-wrapper');
   const cmsId = odWrapper.getAttribute('attr-pid');
   const odStartDesignBtn = document.getElementById('od-start-design-btn');
