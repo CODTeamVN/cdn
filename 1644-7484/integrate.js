@@ -317,7 +317,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cmsId = odWrapper.getAttribute('attr-pid');
   const odStartDesignBtn = document.getElementById('od-start-design-btn');
   const odHtml = `
-    <form action="http://localhost:3000/product?pid=${cmsId}" target="od-editor" method="post" id="editor-form">
+    <form action="${odApiUrl}/product?pid=${cmsId}" target="od-editor" method="post" id="editor-form">
       <input type="hidden" name="X-API-KEY" value="${odClientToken}" />
     </form>
     <div class="editor-wrap">
