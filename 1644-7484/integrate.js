@@ -354,7 +354,10 @@ document.addEventListener("DOMContentLoaded", () => {
       >×</div>
     </div>
   `;
-  odWrapper.insertAdjacentHTML("afterend", odHtml);
+  //odWrapper.insertAdjacentHTML("afterend", odHtml);
+  const odEditorWrapper = document.createElement("div");
+  odEditorWrapper.innerHTML = odHtml;
+  document.querySelector('body').appendChild(odEditorWrapper);
   odWrapper.removeAttribute('style');
 });
 
