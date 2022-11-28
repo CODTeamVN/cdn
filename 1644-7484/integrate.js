@@ -355,9 +355,13 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
   `;
   //odWrapper.insertAdjacentHTML("afterend", odHtml);
-  const odEditorWrapper = document.createElement("div");
-  odEditorWrapper.innerHTML = odHtml;
-  document.querySelector('body').appendChild(odEditorWrapper);
+
+  //const odEditorWrapper = document.createElement("div");
+  //odEditorWrapper.innerHTML = odHtml;
+  //document.querySelector('body').appendChild(odEditorWrapper);
+  
+  const odEditorFragment = document.createRange().createContextualFragment(odHtml);
+  document.querySelector('body').appendChild(odEditorFragment);
   odWrapper.removeAttribute('style');
 });
 
