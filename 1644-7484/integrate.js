@@ -5,7 +5,7 @@ const odClientToken = document.getElementById('od-integrate').getAttribute('attr
 const style = document.createElement('style');
 
 style.textContent = `
-  .od-start-design-btn {
+  #od-start-design-btn {
     background: #fff;
     border-radius: 3px;
     border: 1px solid #98a3b3;
