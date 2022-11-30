@@ -18,6 +18,10 @@ style.textContent = `
     line-height: 48px;
     text-align: center;
     margin: 15px 0;
+    cursor: pointer;
+  }
+  #od-start-design-btn {
+    background: #f3f3f3;
   }
   .od-prevent-scroll {
     overflow: hidden !important;
