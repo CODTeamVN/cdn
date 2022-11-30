@@ -354,15 +354,41 @@ document.addEventListener("DOMContentLoaded", () => {
       >×</div>
     </div>
   `;
-  //odWrapper.insertAdjacentHTML("afterend", odHtml);
-
-  //const odEditorWrapper = document.createElement("div");
-  //odEditorWrapper.innerHTML = odHtml;
-  //document.querySelector('body').appendChild(odEditorWrapper);
   
   const odEditorFragment = document.createRange().createContextualFragment(odHtml);
   document.querySelector('body').appendChild(odEditorFragment);
   odWrapper.removeAttribute('style');
+
+  if(document.querySelectorAll('.od-cart-preview').length){
+    var divs = document.querySelectorAll('.od-cart-preview');
+
+    [].forEach.call(divs, function(div) {
+      const uuid = div.getAttribute('attr-uuid');
+      fetch(`${odApiUrl}/designs/publish/${uuid}`, {
+        method: "GET",
+          headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${odClientToken}`
+          }
+      })
+      .then(function (response) {
+        return response.json();
+      }) 
+      .then(function (response) {
+        if(response.path){
+          let images = '';
+          for(let i = 0; i < response.numberOfSide; i++){
+            images += `<img class="od-preview" style="" src="${odBaseUrl}/${response.path}frame_${i}.png" />`;
+          }
+          const fragment = document.createRange().createContextualFragment(images);
+          div.appendChild(fragment);
+        }
+      }).catch(function (error){
+        console.log(error);
+      });
+    });
+  }
 });
 
 window.downloadOdDesign = function(uuid) {
