@@ -5,6 +5,20 @@ const odClientToken = document.getElementById('od-integrate').getAttribute('attr
 const style = document.createElement('style');
 
 style.textContent = `
+  .od-start-design-btn {
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #98a3b3;
+    color: #000;
+    width: 186px;
+    display: inline-block;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.25em;
+    line-height: 48px;
+    text-align: center;
+    margin: 15px 0;
+  }
   .od-prevent-scroll {
     overflow: hidden !important;
     margin: 0 !important;
