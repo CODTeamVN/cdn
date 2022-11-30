@@ -174,7 +174,7 @@ style.textContent = `
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     cursor: pointer;
     font-size: 30px;
-    line-height: 30px;
+    line-height: 20px;
     z-index: 3;
   }
   .od-preview {
@@ -313,51 +313,53 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('it_height').addEventListener('change', updateDimension);
   }
 
-  const odWrapper = document.getElementById('od-wrapper');
-  const cmsId = odWrapper.getAttribute('attr-pid');
-  const odStartDesignBtn = document.getElementById('od-start-design-btn');
-  const odHtml = `
-    <form action="${odApiUrl}/product?pid=${cmsId}" target="od-editor" method="post" id="editor-form">
-      <input type="hidden" name="X-API-KEY" value="${odClientToken}" />
-    </form>
-    <div class="editor-wrap">
-      <div class="nbd-load-page">
-        <div class="loader">
-          <svg class="circular" viewBox="25 25 50 50">
-            <circle
-              class="path"
-              cx="50"
-              cy="50"
-              r="20"
-              fill="none"
-              stroke-width="2"
-              stroke-miterlimit="10"
-            />
-          </svg>
+  if( document.getElementById('od-wrapper') ){
+    const odWrapper = document.getElementById('od-wrapper');
+    const cmsId = odWrapper.getAttribute('attr-pid');
+    const odStartDesignBtn = document.getElementById('od-start-design-btn');
+    const odHtml = `
+      <form action="${odApiUrl}/product?pid=${cmsId}" target="od-editor" method="post" id="editor-form">
+        <input type="hidden" name="X-API-KEY" value="${odClientToken}" />
+      </form>
+      <div class="editor-wrap">
+        <div class="nbd-load-page">
+          <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+              <circle
+                class="path"
+                cx="50"
+                cy="50"
+                r="20"
+                fill="none"
+                stroke-width="2"
+                stroke-miterlimit="10"
+              />
+            </svg>
+          </div>
         </div>
+        <iframe
+          name="od-editor"
+          class="od-editor"
+          id="od-editor"
+          scrolling="no"
+          frameborder="0"
+          noresize="noresize"
+          allowfullscreen
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+          src="about:blank"
+        ></iframe>
+        <div
+          class="close-editor"
+          onclick="window.onCloseEditor()"
+        >×</div>
       </div>
-      <iframe
-        name="od-editor"
-        class="od-editor"
-        id="od-editor"
-        scrolling="no"
-        frameborder="0"
-        noresize="noresize"
-        allowfullscreen
-        mozallowfullscreen="true"
-        webkitallowfullscreen="true"
-        src="about:blank"
-      ></iframe>
-      <div
-        class="close-editor"
-        onclick="window.onCloseEditor()"
-      >×</div>
-    </div>
-  `;
-  
-  const odEditorFragment = document.createRange().createContextualFragment(odHtml);
-  document.querySelector('body').appendChild(odEditorFragment);
-  odWrapper.removeAttribute('style');
+    `;
+    
+    const odEditorFragment = document.createRange().createContextualFragment(odHtml);
+    document.querySelector('body').appendChild(odEditorFragment);
+    odWrapper.removeAttribute('style');
+  }
 
   if(document.querySelectorAll('.od-cart-preview').length){
     var divs = document.querySelectorAll('.od-cart-preview');
