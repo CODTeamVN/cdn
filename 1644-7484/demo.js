@@ -192,7 +192,7 @@ style.textContent = `
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     cursor: pointer;
     font-size: 30px;
-    line-height: 20px;
+    line-height: 30px;
     z-index: 3;
   }
   .od-preview {
