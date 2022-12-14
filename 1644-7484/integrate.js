@@ -1,5 +1,5 @@
-const odBaseUrl = "https://assets.codteam.net";
-const odApiUrl = "http://localhost:3000";
+const odBaseUrl = "https://resources.1644-7484.link";
+const odApiUrl = "https://api.1644-7484.link";
 const odClientToken = document.getElementById('od-integrate').getAttribute('attr-client-token');
 
 const style = document.createElement('style');
@@ -192,7 +192,7 @@ style.textContent = `
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     cursor: pointer;
     font-size: 30px;
-    line-height: 20px;
+    line-height: 30px;
     z-index: 3;
   }
   .od-preview {
