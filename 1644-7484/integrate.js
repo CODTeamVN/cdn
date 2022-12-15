@@ -279,7 +279,9 @@ window.onSavedDesign = function(path, uuid, numberOfSide) {
 
   document.getElementById('od-wrapper').insertAdjacentHTML("afterend", `<input name="od-design-uuid" id="od-design-uuid" type="hidden" value="${uuid}" />`);
   const imgEls = [...Array(numberOfSide).keys()].map(key => `<img class="od-preview" src="${odBaseUrl}/${path}frame_${key}.png" />`);
-  document.getElementById('od-start-design-btn').insertAdjacentHTML("afterend", `<div class="od-preview-wrap">${imgEls.join('')}</div>`);
+  //document.getElementById('od-start-design-btn').insertAdjacentHTML("afterend", `<div class="od-preview-wrap">${imgEls.join('')}</div>`);
+    const imgElsFragment = document.createRange().createContextualFragment(imgEls);
+    document.getElementById('od-wrapper').appendChild(imgElsFragment);
 }
 
 window.addEventListener("message", (event) => {
@@ -376,7 +378,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const odEditorFragment = document.createRange().createContextualFragment(odHtml);
     document.querySelector('body').appendChild(odEditorFragment);
-    odWrapper.removeAttribute('style');
+    //odWrapper.removeAttribute('style');
   }
 
   if(document.querySelectorAll('.od-cart-preview').length){
