@@ -4785,6 +4785,16 @@ ul[data-tab=tab-9] #selectedTab {
 .nbd-sidebar #tab-background .backgrounds-category .nbd-button ul li:hover {
     background-color: hsla(0,0%,62%,.2);
 }
+.nbd-sidebar #tab-background .backgrounds-category .nbd-button i {
+    font-size: 24px;
+}
+.nbd-sidebar #tab-background .backgrounds-category .nbd-dropdown .nbd-sub-dropdown[data-pos=center]:after,
+.nbd-sidebar #tab-background .backgrounds-category .nbd-dropdown .nbd-sub-dropdown[data-pos=center]:before {
+    display: none;
+}
+.backgrounds-category .nbd-sub-dropdown li.active {
+    background-color: hsla(0,0%,62%,.2);
+}
 
 @media screen and (min-width: 768px) {
     #nav-fonts {
