@@ -24,6 +24,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
       - run: |
-          aws s3 sync ./ s3://$AWS_PATH --recursive --exclude ".git/*"
+          aws s3 sync ./ s3://$AWS_PATH --exclude ".git/*"
         env:
           AWS_PATH: ${{ secrets.AWS_PATH }}
