@@ -4816,6 +4816,20 @@ ul[data-tab=tab-9] #selectedTab {
     transform-origin: top left;
 }
 
+.vertical-text-icon {
+    transform: rotate(-90deg);
+}
+.box-vertical {
+    margin-bottom: 20px
+}
+.item-vertical .sub-menu {
+    min-width: 250px !important;
+    padding: 30px 10px 15px;
+}
+.item-vertical .box-vertical textarea { 
+    width: 100%; font-size: 12px !important; padding: 5px; border-radius: 2px;
+}
+
 @media screen and (min-width: 768px) {
     #nav-fonts {
         width: 0;
