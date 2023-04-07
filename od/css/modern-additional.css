@@ -4868,6 +4868,9 @@ ul[data-tab=tab-9] #selectedTab {
 .cmyk-color {
     width: 60px;
 }
+.nbd-sidebar #tab-svg .cliparts-category .nbd-button ul li.active {
+    background-color: hsla(0,0%,62%,.2);
+}
 
 @media screen and (min-width: 768px) {
     #nav-fonts {
