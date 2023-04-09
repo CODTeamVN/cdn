@@ -1333,7 +1333,7 @@
     border-radius: 2px;
     -webkit-box-shadow: 1px 0 10px rgba(0,0,0,.15);
     box-shadow: 1px 0 10px rgba(0,0,0,.15);
-    top: 110px;
+    bottom: 205px;
     right: 0;
     background: #fff;
     display: flex;
