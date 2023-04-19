@@ -1401,7 +1401,7 @@
     margin: 0;
     padding: 10px;
     text-align: left;
-    font-size: 23px;                
+    font-size: 23px;
 }
 .tab-scroll .ps__scrollbar-y-rail {
     display: none;
@@ -1427,7 +1427,7 @@
 }   
 .nbd-load-page {
     width: 100%;
-    height: 100%;                
+    height: 100%;
 }
 .nbd-toolbar .toolbar-text .nbd-main-menu.menu-left .menu-item.item-font-size .sub-menu ul li {
     cursor: pointer;
@@ -4875,6 +4875,25 @@ ul[data-tab=tab-9] #selectedTab {
 }
 .nbd-sidebar #tab-svg .cliparts-category .nbd-button ul li.active {
     background-color: hsla(0,0%,62%,.2);
+}
+
+@media screen and (min-width: 1200px) {
+    .nbd-text-color-picker {
+        left: -195px;
+        top: 0;
+        min-height: 100%;
+        box-shadow: -15px 0 15px rgba(0,0,0,.07);
+        -webkit-box-shadow: -15px 0 15px rgba(0,0,0,.07);
+    }
+
+    .nbd-workspace .main {
+        z-index: 101;
+    }
+
+    .color-palette-add, .color-eyedropper {
+        position: sticky;
+        top: 0;
+    }
 }
 
 @media screen and (min-width: 768px) {
