@@ -801,14 +801,13 @@
     visibility: hidden;
     opacity: 0;
     -webkit-transition: all .3s;
-    -moz-transition: all .3s;        
+    -moz-transition: all .3s;
     transition: all .3s; 
-    -webkit-box-shadow: 1px 0 15px rgba(0,0,0,.2);    
-    box-shadow: 1px 0 15px rgba(0,0,0,.2);    
+    -webkit-box-shadow: 1px 0 15px rgba(0,0,0,.2);
+    box-shadow: 1px 0 15px rgba(0,0,0,.2);
     background-color: #fff;
     overflow: hidden;
 }
-.nbd-text-color-picker.always-show,
 .nbd-text-color-picker.active {
     opacity: 1;
     visibility: visible;
@@ -4905,10 +4904,45 @@ ul[data-tab=tab-9] #selectedTab {
     .nbd-color-palette .color-palette-add {
         display: none !important;
     }
+
+    .nbd-text-color-picker.always-show{
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
 }
 
-.hide-tooltip .nbd-tooltip-hover {
+.disable-nbd-tooltip-hover {
+    position: relative;
+    top: -5px;
+}
+.disable-nbd-tooltip-hover span {
+    position: absolute;
+    font-size: 10px !important;
+    color: #404762 !important;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-style: normal !important;
+}
+.item-stack {
+    margin-right: 15px;
+    margin-left: 5px;
+}
+.item-shadow .disable-nbd-tooltip-hover span {
+    bottom: -10px;
+}
+.nbd-templates .items .item {
+    width: 100%;
+}
+#tab-typography .text-heading,
+#tab-typography .text-sub-heading {
     display: none !important;
+}
+#tab-typography .text-body {
+    font-size: 30px !important;
 }
 
 @media screen and (min-width: 768px) {
