@@ -808,12 +808,13 @@
     background-color: #fff;
     overflow: hidden;
 }
+.nbd-text-color-picker.always-show,
 .nbd-text-color-picker.active {
     opacity: 1;
     visibility: visible;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
-    transform: scale(1);        
+    transform: scale(1);
 }
 .nbd-color-palette {
     opacity: 0;
@@ -823,8 +824,9 @@
     -ms-transform: scale(0.8);
     transform: scale(0.8);  
     -webkit-transition: all .4s;
-    -moz-transition: all .4s;        
-    transition: all .4s;         
+    -moz-transition: all .4s;
+    transition: all .4s;
+    pointer-events: none;
 }
 .nbd-color-palette-inner .nbd-perfect-scroll{
     max-height: 185px;
@@ -834,7 +836,8 @@
     visibility: visible;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
-    transform: scale(1);           
+    transform: scale(1);
+    pointer-events: all;
 }    
 .nbd-sp.sp-container {
     box-shadow: none;
@@ -4878,8 +4881,8 @@ ul[data-tab=tab-9] #selectedTab {
 }
 
 @media screen and (min-width: 1200px) {
-    .nbd-text-color-picker {
-        left: -195px;
+    .nbd-color-palette .nbd-text-color-picker {
+        left: -205px;
         top: 0;
         min-height: 100%;
         box-shadow: -15px 0 15px rgba(0,0,0,.07);
@@ -4890,10 +4893,22 @@ ul[data-tab=tab-9] #selectedTab {
         z-index: 101;
     }
 
-    .color-palette-add, .color-eyedropper {
+    .color-eyedropper {
         position: sticky;
         top: 0;
     }
+
+    .nbd-text-color-picker .nbd-button.close-color-picker {
+        margin-left: 0;
+    }
+
+    .nbd-color-palette .color-palette-add {
+        display: none !important;
+    }
+}
+
+.hide-tooltip .nbd-tooltip-hover {
+    display: none !important;
 }
 
 @media screen and (min-width: 768px) {
