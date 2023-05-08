@@ -305,8 +305,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if( document.getElementById('it_width') && document.getElementById('it_height') ){
     function updateDimension() {
       window.updatePrintOptions('dimension', {
-        width: parseInt(document.getElementById('it_width').value),
-        height: parseInt(document.getElementById('it_height').value)
+        width: Number(document.getElementById('it_width').value),
+        height: Number(document.getElementById('it_height').value)
       });
     }
 
