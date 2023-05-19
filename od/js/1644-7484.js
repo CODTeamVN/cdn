@@ -350,6 +350,13 @@ window.initDesignEditor = function(actionUrl) {
   document.querySelector("body").appendChild(odEditorFragment);
 };
 
+window.openEditDesign = function(designUUID) {
+  const actionUrl = `${odApiUrl}/edit/design/${designUUID}`;
+  window.initDesignEditor(actionUrl);
+  window.editorLoaded = false;
+  window.showEditor();
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   if( document.getElementById('it_width') && document.getElementById('it_height') ){
     function updateDimension() {
