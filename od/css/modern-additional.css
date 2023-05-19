@@ -4945,6 +4945,9 @@ ul[data-tab=tab-9] #selectedTab {
 #tab-typography .text-body {
     font-size: 30px !important;
 }
+.item-shadow {
+    display: none !important;
+}
 
 @media screen and (min-width: 768px) {
     #nav-fonts {
