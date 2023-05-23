@@ -4893,6 +4893,10 @@ ul[data-tab=tab-9] #selectedTab {
         z-index: 101;
     }
 
+    .nbd-tip {
+        z-index: 102;
+    }
+
     .color-eyedropper {
         position: sticky;
         top: 0;
