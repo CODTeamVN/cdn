@@ -4620,6 +4620,28 @@ ul[data-tab=tab-9] #selectedTab {
 }
 .template-categories {
     padding: 0px 5px 10px 5px;
+    display: flex;
+    gap: 3px;
+}
+
+.template-column {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 40px;
+    background: #404762;
+}
+.template-column i,
+.template-column svg{
+    width: 24px;
+    height: 24px;
+}
+.template-column svg path{
+    fill: #fff;
 }
 .nbd-sidebar #tab-template .template-categories .nbd-button {
     width: 100%;
@@ -4636,6 +4658,7 @@ ul[data-tab=tab-9] #selectedTab {
     overflow: unset;
     font-size: 12px;
     text-transform: capitalize;
+    flex-grow: 2;
 }
 .nbd-sidebar #tab-template .template-categories .nbd-button span {
     color: #fff;
@@ -4686,9 +4709,27 @@ ul[data-tab=tab-9] #selectedTab {
 #template-list {
     height: calc(100% - 50px) !important;
 }
-
 #template-list.template-mode {
     height: calc(100% - 160px) !important;
+}
+#template-list {
+    display: grid;
+    column-gap: 3px;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 3px;
+    grid-auto-rows: max-content;
+}
+#template-list.no-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+#template-list.no-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+#template-list.no-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+#template-list.no-col-5 {
+    grid-template-columns: repeat(5, 1fr);
 }
 .nbd-main-bar ul {
     margin-left: 45px;
@@ -4699,6 +4740,7 @@ ul[data-tab=tab-9] #selectedTab {
     column-gap: 5px;
     grid-template-columns: repeat(5, 1fr);
     row-gap: 5px;
+    grid-auto-rows: max-content;
 }
 .background-item {
     cursor: pointer;
