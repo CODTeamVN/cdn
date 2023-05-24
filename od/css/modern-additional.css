@@ -4900,6 +4900,7 @@ ul[data-tab=tab-9] #selectedTab {
     .color-eyedropper {
         position: sticky;
         top: 0;
+        color: white !important;
     }
 
     .nbd-text-color-picker .nbd-button.close-color-picker {
