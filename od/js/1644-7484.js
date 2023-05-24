@@ -463,7 +463,7 @@ window.downloadOdDesign = function(uuid) {
     result.PDF = response;
 
     async function fetchImages() {
-      const [pngResponse, jpgResponse] = await Promise.all(['png', 'jpg'].map(type => {
+      const [] = await Promise.all([].map(type => {
         return fetch(`${odApiUrl}/resources/shop/image/${uuid}/${type}`, {
           method: "GET",
             headers: {
@@ -473,22 +473,18 @@ window.downloadOdDesign = function(uuid) {
             }
         })
       }));
-      const pngs = await pngResponse.json();
-      const jpgs = await jpgResponse.json();
-      return [pngs, jpgs];
+
+      return [];
     }
     
-    fetchImages().then(([pngs, jpgs]) => {
-      result.PNG = pngs;
-      result.JPG = jpgs;
-
+    fetchImages().then(([]) => {
       const numberOfSide = result.PDF.length;
       let downloadHtml = `
       <div id="result-${uuid}">
         <table class="od-download">
       `;
 
-      ['PDF', 'PNG', 'JPG'].forEach(type => {
+      ['PDF'].forEach(type => {
         downloadHtml += `<tr><th>${type}</th>`;
         for(let i = 0; i < numberOfSide; i++) {
           downloadHtml += `<td><a href="${result[type][i]}" download>Download</a></td>`
