@@ -182,7 +182,7 @@ style.textContent = `
     background: #fff;
     border-radius: 4px;
     border: 3px solid #fff;
-    height: 100px;
+    height: auto;
     width: auto;
     box-shadow: 0 0.5rem 1.5rem 0.5rem rgb(0 0 0 / 8%);
   }
@@ -301,6 +301,62 @@ window.updatePrintOptions = function(type, values) {
   }
 }
 
+window.initDesignEditor = function(actionUrl) {
+  if (document.getElementById("editor-form")) {
+    document.getElementById("editor-form").remove();
+    document.querySelector(".editor-wrap").remove();
+  }
+
+  const odHtml = `
+    <form action="${actionUrl}" target="od-editor" method="post" id="editor-form">
+      <input type="hidden" name="X-API-KEY" value="${odClientToken}" />
+    </form>
+    <div class="editor-wrap">
+      <div class="nbd-load-page">
+        <div class="loader">
+          <svg class="circular" viewBox="25 25 50 50">
+            <circle
+              class="path"
+              cx="50"
+              cy="50"
+              r="20"
+              fill="none"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+          </svg>
+        </div>
+      </div>
+      <iframe
+        name="od-editor"
+        class="od-editor"
+        id="od-editor"
+        scrolling="no"
+        frameborder="0"
+        noresize="noresize"
+        allowfullscreen
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+        src="about:blank"
+      ></iframe>
+      <div
+        class="close-editor"
+        onclick="window.onCloseEditor()"
+      >×</div>
+    </div>
+  `;
+
+  const odEditorFragment = document.createRange().createContextualFragment(odHtml);
+  document.querySelector("body").appendChild(odEditorFragment);
+};
+
+window.openEditDesign = function(designUUID) {
+  const actionUrl = `${odApiUrl}/edit/design/${designUUID}`;
+  window.initDesignEditor(actionUrl);
+  window.editorLoaded = false;
+  window.showEditor();
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   if( document.getElementById('it_width') && document.getElementById('it_height') ){
     function updateDimension() {
@@ -320,48 +376,34 @@ document.addEventListener("DOMContentLoaded", () => {
     const odWrapper = document.getElementById('od-wrapper');
     const cmsId = odWrapper.getAttribute('attr-pid');
     const odStartDesignBtn = document.getElementById('od-start-design-btn');
-    const odHtml = `
-      <form action="${odApiUrl}/product?pid=${cmsId}" target="od-editor" method="post" id="editor-form">
-        <input type="hidden" name="X-API-KEY" value="${odClientToken}" />
-      </form>
-      <div class="editor-wrap">
-        <div class="nbd-load-page">
-          <div class="loader">
-            <svg class="circular" viewBox="25 25 50 50">
-              <circle
-                class="path"
-                cx="50"
-                cy="50"
-                r="20"
-                fill="none"
-                stroke-width="2"
-                stroke-miterlimit="10"
-              />
-            </svg>
-          </div>
-        </div>
-        <iframe
-          name="od-editor"
-          class="od-editor"
-          id="od-editor"
-          scrolling="no"
-          frameborder="0"
-          noresize="noresize"
-          allowfullscreen
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true"
-          src="about:blank"
-        ></iframe>
-        <div
-          class="close-editor"
-          onclick="window.onCloseEditor()"
-        >×</div>
-      </div>
-    `;
-    
-    const odEditorFragment = document.createRange().createContextualFragment(odHtml);
-    document.querySelector('body').appendChild(odEditorFragment);
+    const shopId = odWrapper.getAttribute("attr-shop");
+
+    const params = new URLSearchParams(window.location.search);
+    const templateUUID = params.get("templateUUID") || "";
+
+    let query = `pid=${cmsId}`;
+    if (!!shopId) {
+      query = `${query}&shop=${shopId}`;
+    }
+    if (!!templateUUID) {
+      query = `${query}&templateUUID=${templateUUID}`;
+    }
+
+    window.initDesignEditor(`${odApiUrl}/product?${query}`);
     //odWrapper.removeAttribute('style');
+  }
+
+  if (document.querySelectorAll(".od-edit-design").length) {
+    const editBtns = document.querySelectorAll(".od-edit-design");
+
+    Array.from(editBtns).forEach((btn) => {
+      btn.addEventListener("click", function() {
+        const designUUID = btn.getAttribute("attr-uuid");
+        if (designUUID) {
+          window.openEditDesign(designUUID);
+        }
+      });
+    });
   }
 
   if(document.querySelectorAll('.od-cart-preview').length){
@@ -421,7 +463,7 @@ window.downloadOdDesign = function(uuid) {
     result.PDF = response;
 
     async function fetchImages() {
-      const [pngResponse, jpgResponse, epsResponse] = await Promise.all(['png', 'jpg', 'eps'].map(type => {
+      const [] = await Promise.all([].map(type => {
         return fetch(`${odApiUrl}/resources/shop/image/${uuid}/${type}`, {
           method: "GET",
             headers: {
@@ -431,24 +473,18 @@ window.downloadOdDesign = function(uuid) {
             }
         })
       }));
-      const pngs = await pngResponse.json();
-      const jpgs = await jpgResponse.json();
-      const epss = await epsResponse.json();
-      return [pngs, jpgs, epss];
+
+      return [];
     }
     
-    fetchImages().then(([pngs, jpgs, epss]) => {
-      result.PNG = pngs;
-      result.JPG = jpgs;
-      result.EPS = epss;
-
+    fetchImages().then(([]) => {
       const numberOfSide = result.PDF.length;
       let downloadHtml = `
       <div id="result-${uuid}">
         <table class="od-download">
       `;
 
-      ['PDF', 'PNG', 'JPG', 'EPS'].forEach(type => {
+      ['PDF'].forEach(type => {
         downloadHtml += `<tr><th>${type}</th>`;
         for(let i = 0; i < numberOfSide; i++) {
           downloadHtml += `<td><a href="${result[type][i]}" download>Download</a></td>`
