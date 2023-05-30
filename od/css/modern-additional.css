@@ -4738,7 +4738,7 @@ ul[data-tab=tab-9] #selectedTab {
 .background-wrap {
     display: grid;
     column-gap: 5px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 5px;
     grid-auto-rows: max-content;
 }
@@ -4757,6 +4757,11 @@ ul[data-tab=tab-9] #selectedTab {
     height: 100%;
     border-radius: 4px;
     position: absolute;
+}
+.background-element.background-image {
+    background-repeat: no-repeat;
+    background-size: 400%;
+    background-position: center;
 }
 
 .nbd-sidebar #tab-background .backgrounds-category {
