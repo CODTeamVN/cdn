@@ -266,6 +266,7 @@ window.onSavedDesign = function(path, uuid, numberOfSide) {
     const imgElsFragment = document.createRange().createContextualFragment(imgEls);
     document.getElementById('od-wrapper').appendChild(imgElsFragment);
 }
+// document.addEventListener("onSavedDesign", (e) => console.log(e.detail));
 
 window.addEventListener("message", (event) => {
   if( event.data == 'onLoadedEditor' ){
@@ -357,6 +358,16 @@ window.openEditDesign = function(designUUID) {
   window.showEditor();
 };
 
+window.startWithTemplate = function(templateUUID) {
+  const odWrapper = document.getElementById('pre-specified-product');
+  const cmsId = odWrapper.getAttribute('attr-pid');
+
+  const actionUrl = `${odApiUrl}/product?pid=${cmsId}&templateUUID=${templateUUID}`;
+  window.initDesignEditor(actionUrl);
+  window.editorLoaded = false;
+  window.showEditor();
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   if( document.getElementById('it_width') && document.getElementById('it_height') ){
     function updateDimension() {
@@ -401,6 +412,19 @@ document.addEventListener("DOMContentLoaded", () => {
         const designUUID = btn.getAttribute("attr-uuid");
         if (designUUID) {
           window.openEditDesign(designUUID);
+        }
+      });
+    });
+  }
+
+  if (document.querySelectorAll(".od-start-with-template").length) {
+    const templatePreviews = document.querySelectorAll(".od-start-with-template");
+
+    Array.from(templatePreviews).forEach((preview) => {
+      preview.addEventListener("click", function() {
+        const templateUUID = preview.getAttribute("attr-uuid");
+        if (templateUUID) {
+          window.startWithTemplate(templateUUID);
         }
       });
     });
