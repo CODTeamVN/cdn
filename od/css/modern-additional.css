@@ -5001,6 +5001,13 @@ ul[data-tab=tab-9] #selectedTab {
     display: none !important;
 }
 
+.nbd-sidebar #tab-template .template-categories .nbd-button ul {
+    max-height: calc(100vh - 215px);
+}
+.nbd-sidebar .in-template-mode #tab-template .template-categories .nbd-button ul {
+    max-height: calc(100vh - 320px);
+}
+
 @media screen and (min-width: 768px) {
     #nav-fonts {
         width: 0;
