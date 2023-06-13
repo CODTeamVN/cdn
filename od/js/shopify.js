@@ -261,7 +261,7 @@ window.onSavedDesign = function(path, uuid, numberOfSide) {
   }
 
   if( document.getElementById('od-wrapper') ){
-    document.getElementById('od-wrapper').insertAdjacentHTML("afterend", `<input id="od-design-uuid" name="properties[od_uuid]" type="hidden" value="${uuid}" />`);
+    document.getElementById('od-wrapper').insertAdjacentHTML("afterend", `<input id="od-design-uuid" name="properties[Design UUID]" type="hidden" value="${uuid}" />`);
     const imgEls = [...Array(numberOfSide).keys()].map(key => `<img class="od-preview" src="${odBaseUrl}/${path}frame_${key}.png" />`);
     //document.getElementById('od-start-design-btn').insertAdjacentHTML("afterend", `<div class="od-preview-wrap">${imgEls.join('')}</div>`);
     const imgElsFragment = document.createRange().createContextualFragment(imgEls);
